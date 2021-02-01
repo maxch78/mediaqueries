@@ -1,0 +1,57 @@
+body {
+  background: CornflowerBlue;
+  text-align: center;
+  font-family: sans-serif;
+}
+.content h2:before {
+  content: "Soy XS 😊";
+}
+
+.content p::before {
+    content: "Estoy aprendiendo media queries";
+}
+
+@media (min-width: 576px) {
+    body {
+        background: RebeccaPurple;
+    }
+    .content h2:before {
+        content: "Soy SM 😉";
+    }
+    .content p::before {
+        color: cyan;
+    }
+}
+@media (min-width: 768px) {
+    body {
+        background: Crimson;
+    }
+    .content h2:before {
+        content: "Soy MD 😙";
+    }
+    .content p::before {
+        color: rgb(223, 223, 13);
+    }
+}
+@media (min-width: 992px) {
+    body {
+        background: Orange;
+    }
+    .content h2:before {
+        content: "Soy LG 😜";
+    }
+    .content p::before {
+        color: chartreuse;
+    }
+}
+@media (min-width: 1200px) {
+    body {
+        background: Gold;
+    }
+    .content h2:before {
+        content: "Soy XL 😂";
+    }
+    .content p::before {
+        color: white;
+    }
+}
